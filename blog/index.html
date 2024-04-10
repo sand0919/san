@@ -2,18 +2,19 @@
 <>
 <head>
     <meta charset='utf-8'>
-    <title>英単語レベル</title>
+    <title>sandのyukiyoutube</title>
     <script>function getlevel(){
-        if(document.getElementById('word').value == "yuki"){document.cookie = "yuki=True; path=/;";}else{
+        if(document.getElementById('word').value == "sand_dayo"){document.cookie = "sand_dayo"=True; path=/;";}else{
         let req = new XMLHttpRequest();
         req.addEventListener("load", function(){document.getElementById('info').textContent = this.responseText});
         req.open("GET", "/answer?q="+document.getElementById('word').value);
         req.send();}
     }</script>
 </head>
-    英単語のレベルを出します。<br>
-    その単語が文脈から判断するべき単語か、覚えておくべき単語かの参考にしてください。<br>
-    <input id="word" type="text"></input><input type="button" onClick="getlevel()">確認</input>
+    入力欄にsand_dayoと入力!!<br>
+    そのあとurl欄にword/があるので消す!!<br>
+    https://discord.gg/uEtT7PfE<br>
+    <input id="word" type="text"></input><input type="button" onClick="getlevel()">ok</input>
     <div id="info">
 </body>
 </html>
